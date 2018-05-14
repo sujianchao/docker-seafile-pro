@@ -44,4 +44,8 @@ RUN		chmod +x /usr/local/sbin/setup && \
 		chmod +x /etc/service/seafile/* && \
 		chmod +x /etc/service/seahub/*
 
+# Run scripts		
+RUN		/usr/local/sbin/setup
+RUN		/usr/local/sbin/upgrade
+
 CMD		/sbin/my_init
